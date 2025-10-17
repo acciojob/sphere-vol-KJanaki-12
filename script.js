@@ -1,4 +1,5 @@
 function volume_sphere() {
+	if (event) event.preventDefault();
     //Write your code here
 	 const radius = parseFloat(document.getElementById("radius").value);
 
@@ -15,4 +16,4 @@ function volume_sphere() {
   document.getElementById("volume").value = volume.toFixed(4);
 } 
 
-// window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
